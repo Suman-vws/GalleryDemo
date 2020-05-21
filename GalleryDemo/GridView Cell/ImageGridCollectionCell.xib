@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageGridCollectionCell" id="1Ym-Rt-WI8" customClass="ImageGridCollectionCell" customModule="GalleryDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onv-jQ-CBg" userLabel="Conatiner View">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="JKA-fG-SrK">
+                                <rect key="frame" x="5" y="5" width="110" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mI-t0-8g1">
+                                <rect key="frame" x="5" y="55" width="110" height="40"/>
+                                <color key="backgroundColor" white="0.800772080399061" alpha="0.70419784330985913" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fgg-hP-Joy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-x8-XIv">
+                                <rect key="frame" x="50" y="50" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6mI-t0-8g1" firstAttribute="leading" secondItem="onv-jQ-CBg" secondAttribute="leading" constant="5" id="3dD-9d-t7f"/>
+                            <constraint firstItem="QPo-x8-XIv" firstAttribute="centerX" secondItem="JKA-fG-SrK" secondAttribute="centerX" id="8nz-D9-cje"/>
+                            <constraint firstAttribute="bottom" secondItem="6mI-t0-8g1" secondAttribute="bottom" constant="25" id="AeS-Ar-sa8"/>
+                            <constraint firstItem="QPo-x8-XIv" firstAttribute="centerY" secondItem="JKA-fG-SrK" secondAttribute="centerY" id="Bqd-dp-pbw"/>
+                            <constraint firstItem="JKA-fG-SrK" firstAttribute="leading" secondItem="onv-jQ-CBg" secondAttribute="leading" constant="5" id="KHE-rw-A3W"/>
+                            <constraint firstAttribute="trailing" secondItem="6mI-t0-8g1" secondAttribute="trailing" constant="5" id="LvG-qm-B5g"/>
+                            <constraint firstAttribute="trailing" secondItem="JKA-fG-SrK" secondAttribute="trailing" constant="5" id="N5e-Gy-eFK"/>
+                            <constraint firstAttribute="bottom" secondItem="JKA-fG-SrK" secondAttribute="bottom" constant="5" id="X2w-68-EEO"/>
+                            <constraint firstItem="JKA-fG-SrK" firstAttribute="top" secondItem="onv-jQ-CBg" secondAttribute="top" constant="5" id="nZd-kJ-iOu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="onv-jQ-CBg" firstAttribute="leading" secondItem="1Ym-Rt-WI8" secondAttribute="leadingMargin" constant="-16" id="Epd-na-dKa"/>
+                <constraint firstAttribute="trailingMargin" secondItem="onv-jQ-CBg" secondAttribute="trailing" constant="-16" id="Iui-Xj-poR"/>
+                <constraint firstItem="onv-jQ-CBg" firstAttribute="top" secondItem="1Ym-Rt-WI8" secondAttribute="topMargin" constant="-44" id="PDS-zy-HqQ"/>
+                <constraint firstAttribute="bottomMargin" secondItem="onv-jQ-CBg" secondAttribute="bottom" constant="-34" id="n4z-z1-yia"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nrA-sV-u7w"/>
+            <connections>
+                <outlet property="activityIndicatorVw" destination="QPo-x8-XIv" id="3Hs-P8-yLh"/>
+                <outlet property="containerView" destination="onv-jQ-CBg" id="J5A-Tp-9aG"/>
+                <outlet property="imageTitlelabel" destination="6mI-t0-8g1" id="hmw-ad-mvm"/>
+                <outlet property="imageView" destination="JKA-fG-SrK" id="p1w-Ga-Xtl"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default_image" width="512" height="512"/>
+    </resources>
+</document>
